@@ -1,4 +1,4 @@
-Download the the code and unzip it
+Download the code and unzip it
 How to use:
 1. Goto chrome://extensions/
 2. Turn on developer Mode (located at the top right corner)
