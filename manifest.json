@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Toggle Answer Content",
+    "version": "1.0",
+    "description": "Hide and unhide elements with the class name 'answer-content'.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  
