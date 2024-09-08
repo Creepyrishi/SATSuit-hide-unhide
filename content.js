@@ -1,3 +1,4 @@
+
 // Function to inject the toggle button into all 'question-content' elements
 function injectButtons() {
   const questionContents = document.querySelectorAll('.question-content');
@@ -16,7 +17,10 @@ function injectButtons() {
 
       // Append the button inside the 'question-content' element
       questionContent.appendChild(toggleButton);
-
+      const elements = document.getElementsByClassName('answer-content');
+      Array.from(elements).forEach((el) => {
+        el.style.display = 'none';
+      });
       // Add click event listener to hide/unhide elements with 'answer-content' class
       toggleButton.addEventListener('click', function() {
         const elements = document.getElementsByClassName('answer-content');
